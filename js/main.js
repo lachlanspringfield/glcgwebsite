@@ -356,6 +356,39 @@
   }
 
   /* ============================================================
+     Services Tab Panel
+     ============================================================ */
+  function initServicesTabs() {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+    if (!tabBtns.length) return;
+
+    tabBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const targetTab = btn.dataset.tab;
+
+        // Update buttons
+        tabBtns.forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        // Update panels
+        tabPanels.forEach(function (panel) {
+          panel.classList.remove('active');
+        });
+
+        const targetPanel = document.getElementById('panel-' + targetTab);
+        if (targetPanel) {
+          targetPanel.classList.add('active');
+        }
+      });
+    });
+  }
+
+  /* ============================================================
      Init All
      ============================================================ */
   document.addEventListener('DOMContentLoaded', function () {
@@ -368,5 +401,6 @@
     initContactForm();
     initSmoothScroll();
     initActiveNav();
+    initServicesTabs();
   });
 })();

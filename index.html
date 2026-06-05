@@ -7,7 +7,7 @@
   <meta name="description" content="Guiding Light Care Group is a Registered NDIS Provider specialising in psychosocial disability and complex support needs. Serving Newcastle, Lake Macquarie and Maitland, NSW." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Dancing+Script:wght@600;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -17,6 +17,8 @@
        ============================================================ -->
   <header class="site-header" id="site-header">
     <nav class="nav-inner">
+
+      <!-- Logo -->
       <a href="index.html" class="nav-logo" aria-label="Guiding Light Care Group Home">
         <div class="nav-logo-icon">🌟</div>
         <div class="nav-logo-text">
@@ -25,6 +27,7 @@
         </div>
       </a>
 
+      <!-- Pill Nav -->
       <ul class="nav-menu" role="menubar">
         <li class="nav-item" role="none">
           <a href="index.html" class="nav-link active" role="menuitem">Home</a>
@@ -38,60 +41,12 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </a>
           <ul class="dropdown-menu" role="menu">
-            <li role="none">
-              <a href="services/sil.html" class="dropdown-item" role="menuitem">
-                <div class="dropdown-icon">🏠</div>
-                <div class="dropdown-text">
-                  <strong>Supported Independent Living</strong>
-                  <span>SIL — shared &amp; individual homes</span>
-                </div>
-              </a>
-            </li>
-            <li role="none">
-              <a href="services/ilo.html" class="dropdown-item" role="menuitem">
-                <div class="dropdown-icon">🤝</div>
-                <div class="dropdown-text">
-                  <strong>Individualised Living Options</strong>
-                  <span>ILO — flexible living arrangements</span>
-                </div>
-              </a>
-            </li>
-            <li role="none">
-              <a href="services/community-access.html" class="dropdown-item" role="menuitem">
-                <div class="dropdown-icon">🌏</div>
-                <div class="dropdown-text">
-                  <strong>Community Access</strong>
-                  <span>Social, recreational &amp; skill-building</span>
-                </div>
-              </a>
-            </li>
-            <li role="none">
-              <a href="services/psychosocial-recovery.html" class="dropdown-item" role="menuitem">
-                <div class="dropdown-icon">💚</div>
-                <div class="dropdown-text">
-                  <strong>Psychosocial Recovery Coaching</strong>
-                  <span>Mental health recovery support</span>
-                </div>
-              </a>
-            </li>
-            <li role="none">
-              <a href="services/support-coordination.html" class="dropdown-item" role="menuitem">
-                <div class="dropdown-icon">📋</div>
-                <div class="dropdown-text">
-                  <strong>Support Coordination</strong>
-                  <span>Plan implementation &amp; coordination</span>
-                </div>
-              </a>
-            </li>
-            <li role="none">
-              <a href="services/therapeutic-supports.html" class="dropdown-item" role="menuitem">
-                <div class="dropdown-icon">🧠</div>
-                <div class="dropdown-text">
-                  <strong>Therapeutic Supports</strong>
-                  <span>Evidence-based therapy &amp; allied health</span>
-                </div>
-              </a>
-            </li>
+            <li role="none"><a href="services/sil.html" class="dropdown-item" role="menuitem"><div class="dropdown-icon">🏠</div><div class="dropdown-text"><strong>Supported Independent Living</strong><span>SIL — shared &amp; individual homes</span></div></a></li>
+            <li role="none"><a href="services/ilo.html" class="dropdown-item" role="menuitem"><div class="dropdown-icon">🤝</div><div class="dropdown-text"><strong>Individualised Living Options</strong><span>ILO — flexible living arrangements</span></div></a></li>
+            <li role="none"><a href="services/community-access.html" class="dropdown-item" role="menuitem"><div class="dropdown-icon">🌏</div><div class="dropdown-text"><strong>Community Access</strong><span>Social, recreational &amp; skill-building</span></div></a></li>
+            <li role="none"><a href="services/psychosocial-recovery.html" class="dropdown-item" role="menuitem"><div class="dropdown-icon">💚</div><div class="dropdown-text"><strong>Psychosocial Recovery Coaching</strong><span>Mental health recovery support</span></div></a></li>
+            <li role="none"><a href="services/support-coordination.html" class="dropdown-item" role="menuitem"><div class="dropdown-icon">📋</div><div class="dropdown-text"><strong>Support Coordination</strong><span>Plan implementation &amp; coordination</span></div></a></li>
+            <li role="none"><a href="services/therapeutic-supports.html" class="dropdown-item" role="menuitem"><div class="dropdown-icon">🧠</div><div class="dropdown-text"><strong>Therapeutic Supports</strong><span>Evidence-based therapy &amp; allied health</span></div></a></li>
           </ul>
         </li>
         <li class="nav-item" role="none">
@@ -105,66 +60,86 @@
         </li>
       </ul>
 
+      <!-- Right: social + phone + CTA -->
       <div class="nav-cta">
+        <div class="nav-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+        </div>
         <a href="tel:0424096827" class="nav-phone">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.16 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.55-.55a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.16 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.55-.55a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
           0424 096 827
         </a>
         <a href="contact.html" class="btn btn--primary btn--sm">Get Support</a>
       </div>
 
       <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
   <!-- ============================================================
-       HERO
+       HERO — Light cream split layout
        ============================================================ -->
-  <section class="hero" aria-label="Hero">
-    <div class="hero__bg"></div>
-    <div class="hero__pattern"></div>
-    <div class="container hero__content">
-      <div class="hero__badge">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        Registered NDIS Provider — NSW
+  <section class="hero hero--split" aria-label="Hero">
+    <div class="container">
+      <div class="hero__split-inner">
+
+        <!-- Left: text content -->
+        <div class="hero__left fade-in-up">
+          <p class="hero__script">Helping People Live</p>
+          <h1 class="hero__title">
+            Meaningful,<br /><em>Independent</em> Lives
+          </h1>
+          <p class="hero__subtitle">
+            Trusted NDIS Mental Health &amp; Disability Support across the Hunter region.
+          </p>
+          <div class="location-pills">
+            <span class="location-pill">📍 Newcastle</span>
+            <span class="location-pill">📍 Lake Macquarie</span>
+            <span class="location-pill">📍 Maitland</span>
+          </div>
+          <div class="btn-group">
+            <a href="#services" class="btn btn--primary btn--lg">OUR SERVICES</a>
+            <a href="contact.html" class="btn btn--accent btn--lg">GET IN TOUCH</a>
+          </div>
+        </div>
+
+        <!-- Right: photo collage -->
+        <div class="hero__right fade-in-up delay-2">
+          <!-- Decorative squiggle SVG -->
+          <svg class="hero__squiggle" style="top:-20px;left:60px;opacity:0.5;" width="80" height="60" viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 30 Q 20 10 40 30 Q 60 50 76 30" stroke="#E8A84A" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+          <svg class="hero__squiggle" style="bottom:40px;right:130px;opacity:0.4;" width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 20 Q 14 6 30 20 Q 46 34 56 20" stroke="#C8694A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+
+          <!-- Main rounded photo -->
+          <div class="hero__photo-main">
+            <div class="photo-warm">🌿</div>
+          </div>
+
+          <!-- Floating circular photo -->
+          <div class="hero__photo-circle">
+            <div class="photo-golden">👩</div>
+          </div>
+
+          <!-- Small tilted photo -->
+          <div class="hero__photo-small">
+            <div class="photo-community">🤝</div>
+          </div>
+
+          <!-- I ♥ NDIS badge -->
+          <div class="hero__ndis-badge">
+            <span class="heart">♥</span>
+            <span>I LOVE</span>
+            <span>NDIS</span>
+          </div>
+        </div>
+
       </div>
-      <h1 class="hero__title">
-        Your <em>Light Towards</em><br />Independence
-      </h1>
-      <p class="hero__subtitle">
-        Guiding Light Care Group supports people with psychosocial disability and complex support needs across Newcastle, Lake Macquarie and Maitland. We walk beside you — every step of the way.
-      </p>
-      <div class="btn-group">
-        <a href="contact.html" class="btn btn--accent btn--lg">Talk to Our Team</a>
-        <a href="#services" class="btn btn--outline-white btn--lg">Our Services</a>
-      </div>
-      <div class="hero__trust">
-        <div class="trust-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Registered NDIS Provider
-        </div>
-        <div class="trust-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Mental Health RN Oversight
-        </div>
-        <div class="trust-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          24/7 On-Call Support
-        </div>
-        <div class="trust-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Psychosocial Specialists
-        </div>
-      </div>
-    </div>
-    <div class="hero__wave">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
-        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
-      </svg>
     </div>
   </section>
 
@@ -195,19 +170,17 @@
   </section>
 
   <!-- ============================================================
-       ABOUT PREVIEW (Split)
+       ABOUT PREVIEW — white section, split
        ============================================================ -->
   <section class="section" aria-labelledby="about-heading">
     <div class="container">
       <div class="split">
         <div class="split__image fade-in-up">
-          <div class="split__image-placeholder img-placeholder" style="min-height:440px; border-radius: 1.25rem;">
-            🌿
-          </div>
+          <div class="split__image-placeholder photo-warm" style="min-height:440px; border-radius:1.25rem;">🌿</div>
         </div>
         <div class="split__content fade-in-up delay-2">
           <span class="section-label">About Us</span>
-          <h2 id="about-heading">We're More Than a Support Provider — We're a Community</h2>
+          <h2 id="about-heading" class="display-heading" style="font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:1.25rem;">We're More Than a Support Provider — We're a Community</h2>
           <p class="lead">Founded on the belief that every person deserves to live the life they choose, Guiding Light Care Group was built by people who understand the complexity of psychosocial disability firsthand.</p>
           <p>We combine clinical expertise — with on-call Mental Health Registered Nurse oversight — with genuine human connection. Our team walks alongside participants, families and carers, building capacity and celebrating every step towards independence.</p>
           <ul class="value-list">
@@ -224,164 +197,390 @@
   </section>
 
   <!-- ============================================================
-       SERVICES SECTION
+       SERVICES — Tab Panel layout
        ============================================================ -->
   <section class="section section--alt" id="services" aria-labelledby="services-heading">
     <div class="container">
       <div class="section-header text-center">
         <span class="section-label">What We Offer</span>
-        <h2 class="section-title" id="services-heading">Our NDIS Services</h2>
-        <p class="section-subtitle">Comprehensive supports tailored to your NDIS plan and personal goals — from where you live to how you connect with your community.</p>
+        <h2 class="section-title display-heading" id="services-heading">Our Services</h2>
+        <p class="section-subtitle">Comprehensive NDIS supports tailored to your plan and personal goals.</p>
       </div>
-      <div class="grid-3">
-        <a href="services/sil.html" class="service-card fade-in-up">
-          <div class="service-card__icon">🏠</div>
-          <h3 class="service-card__title">Supported Independent Living</h3>
-          <p class="service-card__desc">Round-the-clock support in shared or individual homes — giving you the tools to live life on your own terms.</p>
-          <span class="service-card__link">
-            Learn more
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </a>
-        <a href="services/ilo.html" class="service-card fade-in-up delay-1">
-          <div class="service-card__icon">🤝</div>
-          <h3 class="service-card__title">Individualised Living Options</h3>
-          <p class="service-card__desc">Flexible, creative living arrangements designed around you — including host, co-residency and supported housemate models.</p>
-          <span class="service-card__link">
-            Learn more
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </a>
-        <a href="services/community-access.html" class="service-card fade-in-up delay-2">
-          <div class="service-card__icon">🌏</div>
-          <h3 class="service-card__title">Community Access</h3>
-          <p class="service-card__desc">Supporting you to engage in social, recreational, educational and employment activities in your local community.</p>
-          <span class="service-card__link">
-            Learn more
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </a>
-        <a href="services/psychosocial-recovery.html" class="service-card fade-in-up delay-3">
-          <div class="service-card__icon">💚</div>
-          <h3 class="service-card__title">Psychosocial Recovery Coaching</h3>
-          <p class="service-card__desc">Specialist coaching for people with psychosocial disability — building recovery, resilience and connection to your NDIS plan.</p>
-          <span class="service-card__link">
-            Learn more
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </a>
-        <a href="services/support-coordination.html" class="service-card fade-in-up delay-4">
-          <div class="service-card__icon">📋</div>
-          <h3 class="service-card__title">Support Coordination</h3>
-          <p class="service-card__desc">We help you understand and implement your NDIS plan — connecting you to the right services to achieve your goals.</p>
-          <span class="service-card__link">
-            Learn more
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </a>
-        <a href="services/therapeutic-supports.html" class="service-card fade-in-up delay-5">
-          <div class="service-card__icon">🧠</div>
-          <h3 class="service-card__title">Therapeutic Supports</h3>
-          <p class="service-card__desc">Evidence-based therapeutic interventions and allied health coordination, using trauma-informed and recovery-focused approaches.</p>
-          <span class="service-card__link">
-            Learn more
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </span>
-        </a>
+
+      <div class="services-tabs">
+        <!-- Tab list (sidebar) -->
+        <div class="tab-list" role="tablist" aria-label="Services">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-sil" data-tab="sil">
+            <span class="tab-icon">🏠</span>
+            Supported Independent Living
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-ilo" data-tab="ilo">
+            <span class="tab-icon">🤝</span>
+            Individualised Living Options
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-community" data-tab="community">
+            <span class="tab-icon">🌏</span>
+            Community Access
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-psychosocial" data-tab="psychosocial">
+            <span class="tab-icon">💚</span>
+            Psychosocial Recovery Coaching
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-coordination" data-tab="coordination">
+            <span class="tab-icon">📋</span>
+            Support Coordination
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-therapeutic" data-tab="therapeutic">
+            <span class="tab-icon">🧠</span>
+            Therapeutic Supports
+          </button>
+        </div>
+
+        <!-- Tab panels -->
+        <div class="tab-panels">
+          <!-- SIL -->
+          <div class="tab-panel active" id="panel-sil" role="tabpanel">
+            <div class="tab-panel__service-icon">🏠</div>
+            <h3 class="tab-panel__heading">Supported Independent Living</h3>
+            <p class="tab-panel__desc">Round-the-clock support in shared or individual homes — giving you the tools to live life on your own terms with clinical oversight when it matters most.</p>
+            <ul class="tab-checklist">
+              <li class="tab-check-item">24/7 support in safe, comfortable homes</li>
+              <li class="tab-check-item">Clinical Mental Health RN oversight on-call</li>
+              <li class="tab-check-item">Shared and individual home options</li>
+              <li class="tab-check-item">Tailored to your NDIS plan goals</li>
+            </ul>
+            <div class="btn-group">
+              <a href="services/sil.html" class="btn btn--primary btn--sm">Learn More</a>
+              <a href="contact.html" class="btn btn--accent btn--sm">Make a Referral &rarr;</a>
+            </div>
+          </div>
+
+          <!-- ILO -->
+          <div class="tab-panel" id="panel-ilo" role="tabpanel">
+            <div class="tab-panel__service-icon">🤝</div>
+            <h3 class="tab-panel__heading">Individualised Living Options</h3>
+            <p class="tab-panel__desc">Flexible, creative living arrangements designed around you — including host, co-residency and supported housemate models that build real independence.</p>
+            <ul class="tab-checklist">
+              <li class="tab-check-item">Host, co-residency &amp; housemate models</li>
+              <li class="tab-check-item">Person-centred and flexible design</li>
+              <li class="tab-check-item">Exploration and matching support</li>
+              <li class="tab-check-item">Ongoing monitoring and review</li>
+            </ul>
+            <div class="btn-group">
+              <a href="services/ilo.html" class="btn btn--primary btn--sm">Learn More</a>
+              <a href="contact.html" class="btn btn--accent btn--sm">Make a Referral &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Community Access -->
+          <div class="tab-panel" id="panel-community" role="tabpanel">
+            <div class="tab-panel__service-icon">🌏</div>
+            <h3 class="tab-panel__heading">Community Access</h3>
+            <p class="tab-panel__desc">Supporting you to engage in social, recreational, educational and employment activities in your local community — building connections that last.</p>
+            <ul class="tab-checklist">
+              <li class="tab-check-item">Social &amp; recreational activities</li>
+              <li class="tab-check-item">Employment &amp; education support</li>
+              <li class="tab-check-item">Building community connections</li>
+              <li class="tab-check-item">Goal-focused outings and programs</li>
+            </ul>
+            <div class="btn-group">
+              <a href="services/community-access.html" class="btn btn--primary btn--sm">Learn More</a>
+              <a href="contact.html" class="btn btn--accent btn--sm">Make a Referral &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Psychosocial -->
+          <div class="tab-panel" id="panel-psychosocial" role="tabpanel">
+            <div class="tab-panel__service-icon">💚</div>
+            <h3 class="tab-panel__heading">Psychosocial Recovery Coaching</h3>
+            <p class="tab-panel__desc">Specialist coaching for people with psychosocial disability — building recovery, resilience and deep connection to your NDIS plan and personal goals.</p>
+            <ul class="tab-checklist">
+              <li class="tab-check-item">Mental health recovery coaching</li>
+              <li class="tab-check-item">NDIS plan navigation support</li>
+              <li class="tab-check-item">Crisis planning &amp; resilience building</li>
+              <li class="tab-check-item">Psychosocial specialist expertise</li>
+            </ul>
+            <div class="btn-group">
+              <a href="services/psychosocial-recovery.html" class="btn btn--primary btn--sm">Learn More</a>
+              <a href="contact.html" class="btn btn--accent btn--sm">Make a Referral &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Support Coordination -->
+          <div class="tab-panel" id="panel-coordination" role="tabpanel">
+            <div class="tab-panel__service-icon">📋</div>
+            <h3 class="tab-panel__heading">Support Coordination</h3>
+            <p class="tab-panel__desc">We help you understand and implement your NDIS plan — connecting you to the right services, managing service agreements and building your support network.</p>
+            <ul class="tab-checklist">
+              <li class="tab-check-item">NDIS plan implementation &amp; guidance</li>
+              <li class="tab-check-item">Service provider connections</li>
+              <li class="tab-check-item">Crisis support &amp; coordination</li>
+              <li class="tab-check-item">Plan review preparation &amp; support</li>
+            </ul>
+            <div class="btn-group">
+              <a href="services/support-coordination.html" class="btn btn--primary btn--sm">Learn More</a>
+              <a href="contact.html" class="btn btn--accent btn--sm">Make a Referral &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Therapeutic -->
+          <div class="tab-panel" id="panel-therapeutic" role="tabpanel">
+            <div class="tab-panel__service-icon">🧠</div>
+            <h3 class="tab-panel__heading">Therapeutic Supports</h3>
+            <p class="tab-panel__desc">Evidence-based therapeutic interventions and allied health coordination, using trauma-informed and recovery-focused approaches for lasting wellbeing.</p>
+            <ul class="tab-checklist">
+              <li class="tab-check-item">Trauma-informed practice</li>
+              <li class="tab-check-item">Allied health coordination</li>
+              <li class="tab-check-item">Behaviour support &amp; PBS</li>
+              <li class="tab-check-item">Evidence-based interventions</li>
+            </ul>
+            <div class="btn-group">
+              <a href="services/therapeutic-supports.html" class="btn btn--primary btn--sm">Learn More</a>
+              <a href="contact.html" class="btn btn--accent btn--sm">Make a Referral &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: decorative image panel -->
+        <div class="tab-image-panel">
+          <div class="tab-blob tab-blob--1"></div>
+          <div class="tab-blob tab-blob--2"></div>
+          <div style="position:relative;z-index:1;width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+            <div class="photo-community" style="border-radius:1rem;width:140px;height:180px;font-size:3rem;">🌿</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       WHY CHOOSE US
+       OUR VALUES
        ============================================================ -->
-  <section class="section" aria-labelledby="why-heading">
+  <section class="values-section section--alt" aria-labelledby="values-heading">
     <div class="container">
-      <div class="section-header text-center">
-        <span class="section-label">Why Choose Us</span>
-        <h2 class="section-title" id="why-heading">Care That Goes the Extra Mile</h2>
-        <p class="section-subtitle">We're not just ticking boxes — we're building genuine relationships and making real differences in people's lives every day.</p>
+      <div class="values-heading-wrap">
+        <span class="script-label">Our Approach</span>
+        <h2 class="values-main-heading" id="values-heading">Our <span class="gold-highlight">Values</span></h2>
+        <p class="section-subtitle" style="margin-top:var(--space-4)">Six principles that shape every interaction, every plan and every life we're privileged to support.</p>
       </div>
-      <div class="grid-3">
-        <div class="why-card fade-in-up">
-          <div class="why-card__icon">🏥</div>
-          <h3 class="why-card__title">Clinical Mental Health Oversight</h3>
-          <p class="why-card__desc">Our on-call Mental Health Registered Nurse provides clinical oversight and is available around the clock — so complex needs are never left unsupported.</p>
+      <div class="values-grid">
+        <div class="value-card fade-in-up">
+          <div class="sunflower-icon">
+            <svg viewBox="0 0 60 60" width="56" height="56"><circle cx="30" cy="30" r="12" fill="#E8A84A"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#E8A84A" opacity="0.65" transform="rotate(0 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#E8A84A" opacity="0.65" transform="rotate(45 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#E8A84A" opacity="0.65" transform="rotate(90 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#E8A84A" opacity="0.65" transform="rotate(135 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#E8A84A" opacity="0.65" transform="rotate(180 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#E8A84A" opacity="0.65" transform="rotate(225 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#E8A84A" opacity="0.65" transform="rotate(270 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#E8A84A" opacity="0.65" transform="rotate(315 30 30)"/></svg>
+          </div>
+          <span class="value-name">Be Genuine</span>
+          <p class="value-desc">We lead with honesty, warmth and transparency. Our team is made up of naturally compassionate people who value real, respectful connection.</p>
         </div>
-        <div class="why-card fade-in-up delay-1">
-          <div class="why-card__icon">💡</div>
-          <h3 class="why-card__title">Psychosocial Specialists</h3>
-          <p class="why-card__desc">We have deep expertise in supporting people with psychosocial disability, mental health conditions and complex co-occurring support needs.</p>
+        <div class="value-card fade-in-up delay-1">
+          <div class="sunflower-icon">
+            <svg viewBox="0 0 60 60" width="56" height="56"><circle cx="30" cy="30" r="12" fill="#D4933A"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#D4933A" opacity="0.65" transform="rotate(0 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#D4933A" opacity="0.65" transform="rotate(45 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#D4933A" opacity="0.65" transform="rotate(90 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#D4933A" opacity="0.65" transform="rotate(135 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#D4933A" opacity="0.65" transform="rotate(180 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#D4933A" opacity="0.65" transform="rotate(225 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#D4933A" opacity="0.65" transform="rotate(270 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#D4933A" opacity="0.65" transform="rotate(315 30 30)"/></svg>
+          </div>
+          <span class="value-name">Empower People</span>
+          <p class="value-desc">We take a strengths-based, person-centred approach that puts participants in control of their journey — helping them grow and achieve their goals.</p>
         </div>
-        <div class="why-card fade-in-up delay-2">
-          <div class="why-card__icon">🎯</div>
-          <h3 class="why-card__title">Person-Centred Every Time</h3>
-          <p class="why-card__desc">Your goals, your choices, your pace. We build individual support plans that truly reflect what matters to you and the life you want to lead.</p>
+        <div class="value-card fade-in-up delay-2">
+          <div class="sunflower-icon">
+            <svg viewBox="0 0 60 60" width="56" height="56"><circle cx="30" cy="30" r="12" fill="#C8694A"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#C8694A" opacity="0.65" transform="rotate(0 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#C8694A" opacity="0.65" transform="rotate(45 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#C8694A" opacity="0.65" transform="rotate(90 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#C8694A" opacity="0.65" transform="rotate(135 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#C8694A" opacity="0.65" transform="rotate(180 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#C8694A" opacity="0.65" transform="rotate(225 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#C8694A" opacity="0.65" transform="rotate(270 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#C8694A" opacity="0.65" transform="rotate(315 30 30)"/></svg>
+          </div>
+          <span class="value-name">Trust</span>
+          <p class="value-desc">We show up with integrity, consistency and care. Our participants trust us to provide reliable, high-quality support that respects their needs and wellbeing.</p>
         </div>
-        <div class="why-card fade-in-up delay-3">
-          <div class="why-card__icon">🌏</div>
-          <h3 class="why-card__title">Local Community Connections</h3>
-          <p class="why-card__desc">Deeply embedded in Newcastle, Lake Macquarie and Maitland — we know our local services, community groups and resources inside out.</p>
+        <div class="value-card fade-in-up delay-3">
+          <div class="sunflower-icon">
+            <svg viewBox="0 0 60 60" width="56" height="56"><circle cx="30" cy="30" r="12" fill="#8BAF9F"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#8BAF9F" opacity="0.65" transform="rotate(0 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#8BAF9F" opacity="0.65" transform="rotate(45 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#8BAF9F" opacity="0.65" transform="rotate(90 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#8BAF9F" opacity="0.65" transform="rotate(135 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#8BAF9F" opacity="0.65" transform="rotate(180 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#8BAF9F" opacity="0.65" transform="rotate(225 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#8BAF9F" opacity="0.65" transform="rotate(270 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#8BAF9F" opacity="0.65" transform="rotate(315 30 30)"/></svg>
+          </div>
+          <span class="value-name">Excellence</span>
+          <p class="value-desc">We are committed to delivering high-quality, evidence-based support that continues to evolve through ongoing training, learning and reflection.</p>
         </div>
-        <div class="why-card fade-in-up delay-4">
-          <div class="why-card__icon">🔒</div>
-          <h3 class="why-card__title">Safe &amp; Compliant Practice</h3>
-          <p class="why-card__desc">Registered NDIS Provider with robust safeguarding policies, regular quality reviews and full compliance with NDIS Practice Standards.</p>
+        <div class="value-card fade-in-up delay-4">
+          <div class="sunflower-icon">
+            <svg viewBox="0 0 60 60" width="56" height="56"><circle cx="30" cy="30" r="12" fill="#5A8C7E"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#5A8C7E" opacity="0.65" transform="rotate(0 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#5A8C7E" opacity="0.65" transform="rotate(45 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#5A8C7E" opacity="0.65" transform="rotate(90 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#5A8C7E" opacity="0.65" transform="rotate(135 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#5A8C7E" opacity="0.65" transform="rotate(180 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#5A8C7E" opacity="0.65" transform="rotate(225 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#5A8C7E" opacity="0.65" transform="rotate(270 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#5A8C7E" opacity="0.65" transform="rotate(315 30 30)"/></svg>
+          </div>
+          <span class="value-name">Adaptability</span>
+          <p class="value-desc">We understand that needs and goals change. Our team stays flexible and responsive, adjusting support to suit each individual while remaining consistent.</p>
         </div>
-        <div class="why-card fade-in-up delay-5">
-          <div class="why-card__icon">❤️</div>
-          <h3 class="why-card__title">Family &amp; Carer Inclusive</h3>
-          <p class="why-card__desc">We believe families and carers are part of the team. We keep you informed, involved and respected throughout the entire support journey.</p>
+        <div class="value-card fade-in-up delay-5">
+          <div class="sunflower-icon">
+            <svg viewBox="0 0 60 60" width="56" height="56"><circle cx="30" cy="30" r="12" fill="#2D5A44"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#2D5A44" opacity="0.65" transform="rotate(0 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#2D5A44" opacity="0.65" transform="rotate(45 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#2D5A44" opacity="0.65" transform="rotate(90 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#2D5A44" opacity="0.65" transform="rotate(135 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#2D5A44" opacity="0.65" transform="rotate(180 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#2D5A44" opacity="0.65" transform="rotate(225 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#2D5A44" opacity="0.65" transform="rotate(270 30 30)"/><ellipse cx="30" cy="10" rx="5" ry="9" fill="#2D5A44" opacity="0.65" transform="rotate(315 30 30)"/></svg>
+          </div>
+          <span class="value-name">Connection</span>
+          <p class="value-desc">Strong relationships are at the heart of great support. We help participants feel supported, understood and connected to the people and community around them.</p>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:var(--space-10)">
+        <a href="about.html" class="btn btn--terra">About Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PARTICIPANT STORIES — Terracotta full-bleed
+       ============================================================ -->
+  <section class="stories-section" aria-labelledby="stories-heading">
+    <div class="stories-blob"></div>
+    <div class="container" style="position:relative;z-index:1;text-align:center;">
+      <span class="script-label">Our Participants</span>
+      <h2 class="display-heading" id="stories-heading" style="color:#fff;margin-bottom:var(--space-4)">A day in the life with<br /><em>Guiding Light Care</em></h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.82);margin-bottom:0">Get a glimpse into the day-to-day lives of people thriving with tailored NDIS support across Newcastle, Lake Macquarie and Maitland.</p>
+      <div class="stories-grid">
+        <div class="story-card fade-in-up">
+          <div class="story-card__photo"></div>
+          <div class="story-card__overlay">
+            <div>
+              <p class="story-card__label">A Day in the Life</p>
+              <p class="story-card__name">With James &amp; his support team</p>
+            </div>
+            <div class="story-card__play">▶</div>
+          </div>
+        </div>
+        <div class="story-card fade-in-up delay-2">
+          <div class="story-card__photo"></div>
+          <div class="story-card__overlay">
+            <div>
+              <p class="story-card__label">A Day in the Life</p>
+              <p class="story-card__name">With Sarah &amp; her ILO home</p>
+            </div>
+            <div class="story-card__play">▶</div>
+          </div>
+        </div>
+        <div class="story-card fade-in-up delay-4">
+          <div class="story-card__photo"></div>
+          <div class="story-card__overlay">
+            <div>
+              <p class="story-card__label">A Day in the Life</p>
+              <p class="story-card__name">With Priya, Marcus &amp; Dave</p>
+            </div>
+            <div class="story-card__play">▶</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       HOW IT WORKS
+       STATS + TEAM PREVIEW
        ============================================================ -->
-  <section class="section section--alt" aria-labelledby="how-heading">
+  <section class="stats-team-section" aria-labelledby="stats-team-heading">
     <div class="container">
-      <div class="section-header text-center">
-        <span class="section-label">Getting Started</span>
-        <h2 class="section-title" id="how-heading">How It Works</h2>
-        <p class="section-subtitle">Starting your journey with us is simple. We take the complexity out of navigating supports so you can focus on what matters.</p>
-      </div>
-      <div class="steps-grid">
-        <div class="step-item fade-in-up">
-          <div class="step-number">1</div>
-          <h3 class="step-title">Reach Out</h3>
-          <p class="step-desc">Contact us by phone, email or through our enquiry form. Our friendly team will respond within one business day.</p>
+      <div class="stats-team-grid">
+        <div class="stats-left fade-in-up">
+          <div class="stat-big-item">
+            <div class="stat-big-number">95%</div>
+            <div class="stat-big-label">Participant satisfaction rate</div>
+            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:95%"></div></div>
+          </div>
+          <div class="stat-big-item">
+            <div class="stat-big-number">90%</div>
+            <div class="stat-big-label">Participant retention rate</div>
+            <div class="stat-bar-track"><div class="stat-bar-fill" style="width:90%"></div></div>
+          </div>
+          <div class="arch-photos-pair">
+            <div class="arch-photo-sm arch-photo-sm--sage" style="position:relative">
+              <div class="arch-photo-sm__inner">🌿</div>
+              <div class="arch-dashes"><span></span><span></span><span></span></div>
+            </div>
+            <div class="arch-photo-sm arch-photo-sm--gold">
+              <div class="arch-photo-sm__inner">☀️</div>
+            </div>
+          </div>
         </div>
-        <div class="step-item fade-in-up delay-1">
-          <div class="step-number">2</div>
-          <h3 class="step-title">Discovery Meeting</h3>
-          <p class="step-desc">We arrange a no-obligation discovery conversation — learning about your goals, your NDIS plan and what's important to you.</p>
-        </div>
-        <div class="step-item fade-in-up delay-2">
-          <div class="step-number">3</div>
-          <h3 class="step-title">Personalised Plan</h3>
-          <p class="step-desc">Together we build your individual support plan, connecting you to the right services, staff and housing options.</p>
-        </div>
-        <div class="step-item fade-in-up delay-3">
-          <div class="step-number">4</div>
-          <h3 class="step-title">Begin Your Journey</h3>
-          <p class="step-desc">Supports begin with an ongoing commitment to review, refine and celebrate your progress every step of the way.</p>
+        <div class="stats-right fade-in-up delay-2">
+          <div class="stats-team-right-content">
+            <span class="script-label">Our Team</span>
+            <h2 id="stats-team-heading">More than just <em>friendly faces</em></h2>
+            <p>Our team brings together clinical expertise, lived experience and a genuine drive to make a difference. We value connection, celebrate individuality, and work side by side to create the best outcomes for the people we support. Every person here plays a role in making our services feel personal, reliable and trusted.</p>
+            <a href="about.html" class="btn btn--primary">Our Team</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       SIL/ILO AVAILABILITY TEASER
+       TEAM ARCHES
        ============================================================ -->
-  <section class="section" aria-label="Vacancy finder">
+  <section class="section" aria-labelledby="team-heading">
+    <div class="container text-center">
+      <span class="section-label">Meet Our Team</span>
+      <h2 class="section-title display-heading" id="team-heading">The People Behind the Light</h2>
+      <p class="section-subtitle">Our team combines clinical expertise, lived experience and a genuine passion for making a difference.</p>
+      <a href="about.html" class="btn btn--outline" style="margin-bottom:var(--space-6);">About Us</a>
+
+      <div class="team-arches">
+        <div class="team-arch arch--gold fade-in-up">
+          <div class="arch__frame">
+            <div class="arch__photo">👩</div>
+          </div>
+          <div class="arch__info">
+            <div class="arch__name">Jessica Morland</div>
+            <div class="arch__role">Founder &amp; Director</div>
+          </div>
+        </div>
+        <div class="team-arch arch--sage fade-in-up delay-1">
+          <div class="arch__frame">
+            <div class="arch__photo">👨</div>
+          </div>
+          <div class="arch__info">
+            <div class="arch__name">Daniel Huang</div>
+            <div class="arch__role">Clinical Lead — MH RN</div>
+          </div>
+        </div>
+        <div class="team-arch arch--terra fade-in-up delay-2">
+          <div class="arch__frame">
+            <div class="arch__photo">👩</div>
+          </div>
+          <div class="arch__info">
+            <div class="arch__name">Anika Patel</div>
+            <div class="arch__role">Head of Support Coordination</div>
+          </div>
+        </div>
+        <div class="team-arch arch--olive fade-in-up delay-3">
+          <div class="arch__frame">
+            <div class="arch__photo">👨</div>
+          </div>
+          <div class="arch__info">
+            <div class="arch__name">Marcus Connolly</div>
+            <div class="arch__role">SIL &amp; ILO Operations</div>
+          </div>
+        </div>
+        <div class="team-arch arch--teal fade-in-up delay-4">
+          <div class="arch__frame">
+            <div class="arch__photo">👩</div>
+          </div>
+          <div class="arch__info">
+            <div class="arch__name">Priya Sharma</div>
+            <div class="arch__role">Recovery Coach Lead</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GET IN TOUCH — Split with multi-ring arch photo
+       ============================================================ -->
+  <section class="contact-split-section" aria-labelledby="contact-split-heading">
     <div class="container">
-      <div class="availability-banner fade-in-up">
-        <span class="section-label">SIL &amp; ILO Vacancies</span>
-        <h3>Looking for Supported Accommodation in the Hunter?</h3>
-        <p>We have current and upcoming vacancies across Newcastle, Lake Macquarie and Maitland. Use our interactive vacancy finder to find the right fit for your needs.</p>
-        <a href="availability.html" class="btn btn--primary btn--lg">Check Current Vacancies</a>
+      <div class="contact-split-grid">
+        <div class="contact-split-content fade-in-up">
+          <span class="script-label">Get In Touch</span>
+          <h2 id="contact-split-heading">Ready To Find If We're A <em>Good Fit?</em></h2>
+          <p>We're here to make support simple, personal and effective. Reach out today and find out if we're the right team for you — no pressure, just a genuine conversation.</p>
+          <div class="btn-group">
+            <a href="contact.html" class="btn btn--primary btn--lg">Get In Touch</a>
+            <a href="contact.html" class="btn btn--terra btn--lg">Make a Referral</a>
+          </div>
+        </div>
+        <div class="contact-split-photo fade-in-up delay-2">
+          <div class="multi-ring-frame">
+            <div class="multi-ring-frame__outer"></div>
+            <div class="multi-ring-frame__mid"></div>
+            <div class="multi-ring-frame__inner"></div>
+            <div class="multi-ring-frame__photo">🌟</div>
+            <div class="ring-dashes ring-dashes--tl"><span></span><span></span><span></span></div>
+            <div class="ring-dashes ring-dashes--br"><span></span><span></span><span></span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -393,7 +592,7 @@
     <div class="container">
       <div class="section-header text-center">
         <span class="section-label">What People Say</span>
-        <h2 class="section-title" id="testimonials-heading">Stories from Our Community</h2>
+        <h2 class="section-title display-heading" id="testimonials-heading">Stories from Our Community</h2>
       </div>
       <div class="grid-3">
         <div class="testimonial-card fade-in-up">
@@ -443,11 +642,11 @@
     <div class="container">
       <div class="section-header text-center">
         <span class="section-label">Where We Work</span>
-        <h2 class="section-title" id="areas-heading">Our Service Areas</h2>
+        <h2 class="section-title display-heading" id="areas-heading">Our Service Areas</h2>
         <p class="section-subtitle">We proudly serve participants and families across the Hunter Valley region.</p>
       </div>
       <div class="grid-4">
-        <div class="area-card fade-in-up">
+        <div class="area-card fade-in-up" style="min-height:220px;">
           <div class="area-card__bg"></div>
           <div class="area-card__overlay"></div>
           <div class="area-card__content">
@@ -455,7 +654,7 @@
             <p class="area-card__sub">City &amp; surrounds</p>
           </div>
         </div>
-        <div class="area-card fade-in-up delay-1">
+        <div class="area-card fade-in-up delay-1" style="min-height:220px;">
           <div class="area-card__bg"></div>
           <div class="area-card__overlay"></div>
           <div class="area-card__content">
@@ -463,7 +662,7 @@
             <p class="area-card__sub">West &amp; East Lake</p>
           </div>
         </div>
-        <div class="area-card fade-in-up delay-2">
+        <div class="area-card fade-in-up delay-2" style="min-height:220px;">
           <div class="area-card__bg"></div>
           <div class="area-card__overlay"></div>
           <div class="area-card__content">
@@ -471,7 +670,7 @@
             <p class="area-card__sub">Hunter Valley</p>
           </div>
         </div>
-        <div class="area-card fade-in-up delay-3">
+        <div class="area-card fade-in-up delay-3" style="min-height:220px;">
           <div class="area-card__bg"></div>
           <div class="area-card__overlay"></div>
           <div class="area-card__content">
@@ -484,43 +683,61 @@
   </section>
 
   <!-- ============================================================
-       CTA BANNER
-       ============================================================ -->
-  <section class="cta-banner" aria-label="Contact call to action">
-    <div class="container">
-      <span class="section-label" style="color:#ffc878;">Start Your Journey Today</span>
-      <h2>Ready to Find the Right Support?</h2>
-      <p>Our friendly team is here to answer your questions and help you take the next step. No obligation, no pressure — just genuine care.</p>
-      <a href="tel:0424096827" class="cta-phone">0424 096 827</a>
-      <div class="btn-group" style="justify-content:center;">
-        <a href="contact.html" class="btn btn--accent btn--lg">Send an Enquiry</a>
-        <a href="ndis-funding.html" class="btn btn--outline-white btn--lg">NDIS Funding Guide</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       FOOTER
+       FOOTER — Light Cream
        ============================================================ -->
   <footer class="site-footer" aria-label="Site footer">
     <div class="container">
       <div class="footer-grid">
+
+        <!-- Col 1: Brand + Acknowledgement -->
         <div class="footer-brand">
-          <a href="index.html" class="nav-logo">
-            <div class="nav-logo-icon">🌟</div>
-            <div class="nav-logo-text">
-              <strong>Guiding Light</strong>
-              <span>Care Group</span>
-            </div>
-          </a>
-          <p class="footer-tagline">Your Light Towards Independence. Supporting people with psychosocial disability and complex needs across Newcastle, Lake Macquarie and Maitland.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">in</a>
-            <a href="#" aria-label="LinkedIn">Li</a>
+          <p class="footer-script-tagline">Helping People Live</p>
+          <p class="footer-display-tagline">Meaningful, <em>Independent</em> Lives</p>
+          <div class="footer-acknowledgement">
+            <h5>Acknowledgement of Country</h5>
+            <p>Guiding Light Care Group acknowledges Aboriginal and Torres Strait Islander peoples as the First Peoples of Australia. We pay our respects to their Elders past, present and future who we share this great region with.</p>
+            <h5>Diversity Commitment</h5>
+            <p>We are committed to embracing diversity and eliminating all forms of discrimination. We welcome all people irrespective of ethnicity, lifestyle choice, faith, sexual orientation and gender identity.</p>
           </div>
-          <div class="footer-ndis-badge">✅ Registered NDIS Provider</div>
+          <div class="footer-social">
+            <a href="mailto:hello@guidinglightcare.com.au" aria-label="Email">✉</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+          </div>
         </div>
+
+        <!-- Col 2: Find Us + Contact -->
+        <div class="footer-col">
+          <h4>Find Us</h4>
+          <div class="footer-contact-item">
+            <div>
+              <span class="footer-col-label">Newcastle</span>
+              <span>Hunter Region, NSW</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div>
+              <span class="footer-col-label">Lake Macquarie</span>
+              <span>Lake Macquarie, NSW</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div>
+              <span class="footer-col-label">Maitland</span>
+              <span>Hunter Valley, NSW</span>
+            </div>
+          </div>
+          <h4 style="margin-top:var(--space-6)">Contact Us</h4>
+          <div class="footer-contact-item">
+            <a href="tel:0424096827">0424 096 827</a>
+          </div>
+          <div class="footer-contact-item">
+            <a href="mailto:hello@guidinglightcare.com.au">hello@guidinglightcare.com.au</a>
+          </div>
+          <p style="font-size:0.8rem;color:var(--text-light);margin-top:var(--space-3)">Mon–Fri 8:00am–5:00pm<br />24/7 on-call support available</p>
+        </div>
+
+        <!-- Col 3: Services -->
         <div class="footer-col">
           <h4>Services</h4>
           <ul class="footer-links">
@@ -531,45 +748,41 @@
             <li><a href="services/support-coordination.html">Support Coordination</a></li>
             <li><a href="services/therapeutic-supports.html">Therapeutic Supports</a></li>
           </ul>
+          <div class="footer-cta-btns">
+            <a href="contact.html" class="btn btn--terra btn--sm">Make a Referral</a>
+            <a href="contact.html" class="btn btn--primary btn--sm">Get In Touch</a>
+          </div>
         </div>
+
+        <!-- Col 4: About + Compliance -->
         <div class="footer-col">
-          <h4>Company</h4>
+          <h4>About</h4>
           <ul class="footer-links">
             <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Meet The Team</a></li>
+            <li><a href="availability.html">NDIS Vacancies</a></li>
             <li><a href="ndis-funding.html">NDIS Funding Guide</a></li>
-            <li><a href="availability.html">SIL &amp; ILO Vacancies</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
           </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <div class="footer-contact-item">
-            <span class="icon">📞</span>
-            <a href="tel:0424096827">0424 096 827</a>
+          <div class="footer-ndis-badge" style="margin-top:var(--space-6)">
+            <span style="font-size:1rem">♥</span>
+            <span style="font-size:0.6rem;font-weight:800;line-height:1">ndis</span>
           </div>
-          <div class="footer-contact-item">
-            <span class="icon">✉️</span>
-            <a href="mailto:hello@guidinglightcare.com.au">hello@guidinglightcare.com.au</a>
-          </div>
-          <div class="footer-contact-item">
-            <span class="icon">📍</span>
-            <span>Newcastle, Lake Macquarie &amp; Maitland, NSW</span>
-          </div>
-          <div class="footer-contact-item">
-            <span class="icon">🕐</span>
-            <span>Mon–Fri 8:30am–5:00pm<br />On-call support 24/7</span>
+          <div class="footer-compliance">
+            <strong>NDIS Registered Provider</strong><br />
+            Registered with NDIS Quality<br />and Safeguards Commission
           </div>
         </div>
+
       </div>
-      <div class="footer-bottom">
-        <span>© 2025 Guiding Light Care Group. All rights reserved. ABN: XX XXX XXX XXX</span>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Accessibility</a>
-        </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Guiding Light Care Group. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Accessibility</a>
       </div>
     </div>
   </footer>
