@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIL &amp; ILO Vacancy Finder | Guiding Light Care Group</title>
+  <meta name="description" content="Find current SIL and ILO vacancies across Newcastle, Lake Macquarie and Maitland with Guiding Light Care Group. Filter by region, support level and room type." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Dancing+Script:wght@600;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🌟</div>
+        <div class="nav-logo-text"><strong>Guiding Light</strong><span>Care Group</span></div>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Services
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="services/sil.html" class="dropdown-item"><div class="dropdown-icon">🏠</div><div class="dropdown-text"><strong>Supported Independent Living</strong><span>SIL — shared &amp; individual homes</span></div></a></li>
+            <li><a href="services/ilo.html" class="dropdown-item"><div class="dropdown-icon">🤝</div><div class="dropdown-text"><strong>Individualised Living Options</strong><span>ILO — flexible living arrangements</span></div></a></li>
+            <li><a href="services/community-access.html" class="dropdown-item"><div class="dropdown-icon">🌏</div><div class="dropdown-text"><strong>Community Access</strong><span>Social, recreational &amp; skill-building</span></div></a></li>
+            <li><a href="services/psychosocial-recovery.html" class="dropdown-item"><div class="dropdown-icon">💚</div><div class="dropdown-text"><strong>Psychosocial Recovery Coaching</strong><span>Mental health recovery support</span></div></a></li>
+            <li><a href="services/support-coordination.html" class="dropdown-item"><div class="dropdown-icon">📋</div><div class="dropdown-text"><strong>Support Coordination</strong><span>Plan implementation &amp; coordination</span></div></a></li>
+            <li><a href="services/therapeutic-supports.html" class="dropdown-item"><div class="dropdown-icon">🧠</div><div class="dropdown-text"><strong>Therapeutic Supports</strong><span>Evidence-based therapy &amp; allied health</span></div></a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="availability.html" class="nav-link active">Vacancies</a></li>
+        <li class="nav-item"><a href="ndis-funding.html" class="nav-link">NDIS Funding</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:0424096827" class="nav-phone">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.16 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.55-.55a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+          0424 096 827
+        </a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Get Support</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- INNER HERO -->
+  <section class="hero hero--inner">
+    <div class="container hero__content">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a><span>›</span>
+        <span>SIL &amp; ILO Vacancy Finder</span>
+      </nav>
+      <span class="script-label">Current Openings</span>
+      <h1 class="hero__inner-title">SIL &amp; ILO Vacancy Finder</h1>
+      <p class="hero__inner-sub">Search our current and upcoming vacancies across Newcastle, Lake Macquarie and Maitland. Filter by what matters to you.</p>
+    </div>
+  </section>
+
+  <!-- AVAILABILITY FINDER -->
+  <section class="section section--alt" aria-labelledby="finder-heading">
+    <div class="container">
+      <div class="availability-layout">
+
+        <!-- Filters Sidebar -->
+        <aside class="filters-panel" aria-label="Filter vacancies">
+          <h2 class="filters-panel__title" id="finder-heading">Filter Vacancies</h2>
+
+          <div class="filter-group">
+            <label for="filter-service">Service Type</label>
+            <select id="filter-service" aria-label="Filter by service type">
+              <option value="all">All Services</option>
+              <option value="sil">SIL Only</option>
+              <option value="ilo">ILO Only</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-region">Region</label>
+            <select id="filter-region" aria-label="Filter by region">
+              <option value="all">All Regions</option>
+              <option value="newcastle">Newcastle</option>
+              <option value="lake macquarie">Lake Macquarie</option>
+              <option value="maitland">Maitland</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-support">Support Level</label>
+            <select id="filter-support" aria-label="Filter by support level">
+              <option value="all">All Support Levels</option>
+              <option value="low">Low Support</option>
+              <option value="medium">Medium Support</option>
+              <option value="high">High Support</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-room">Room Type</label>
+            <select id="filter-room" aria-label="Filter by room type">
+              <option value="all">All Room Types</option>
+              <option value="single">Single Room</option>
+              <option value="shared">Shared Room</option>
+            </select>
+          </div>
+
+          <button id="clear-filters" class="btn btn--outline btn--sm" style="width:100%;justify-content:center;margin-top:0.5rem;">
+            Clear All Filters
+          </button>
+
+          <div class="results-count" id="results-count" style="margin-top:1rem;">
+            Showing <strong>8</strong> of <strong>8</strong> vacancies
+          </div>
+        </aside>
+
+        <!-- Listings -->
+        <div>
+          <div class="listings-grid" id="listings-grid">
+
+            <!-- Card 1: SIL Newcastle High Available Now -->
+            <article class="availability-card fade-in-up"
+              data-service="sil"
+              data-region="newcastle"
+              data-support="high"
+              data-room="single">
+              <div class="availability-card__header">
+                <span class="availability-card__ref">GLCG-SIL-001</span>
+                <span class="badge badge--sil">SIL</span>
+              </div>
+              <div class="availability-card__body">
+                <h3 class="availability-card__name">Broadmeadow Specialist Home</h3>
+                <div class="availability-card__region">
+                  <span>📍</span> Newcastle — Broadmeadow
+                </div>
+                <div class="availability-card__badges">
+                  <span class="badge badge--high">High Support</span>
+                  <span class="badge badge--available">Available Now</span>
+                </div>
+                <p class="availability-card__desc">Specialist SIL home with on-site clinical oversight for participants with high psychosocial and complex support needs. Single room available in a 3-person home. Staffed 24/7 with active overnight support.</p>
+              </div>
+              <div class="availability-card__footer">
+                <div style="display:flex; flex-direction:column; gap:0.25rem;">
+                  <span style="font-size:0.75rem; font-weight:700; color:var(--color-text-muted);">ROOM TYPE</span>
+                  <span style="font-size:0.875rem; font-weight:700;">Single Room</span>
+                </div>
+                <a href="contact.html" class="btn btn--primary btn--sm">Enquire Now</a>
+              </div>
+            </article>
+
+            <!-- Card 2: SIL Newcastle High Available Now -->
+            <article class="availability-card fade-in-up delay-1"
+              data-service="sil"
+              data-region="newcastle"
+              data-support="high"
+              data-room="single">
+              <div class="availability-card__header">
+                <span class="availability-card__ref">GLCG-SIL-002</span>
+                <span class="badge badge--sil">SIL</span>
+              </div>
+              <div class="availability-card__body">
+                <h3 class="availability-card__name">Waratah Supported Home</h3>
+                <div class="availability-card__region">
+                  <span>📍</span> Newcastle — Waratah
+                </div>
+                <div class="availability-card__badges">
+                  <span class="badge badge--high">High Support</span>
+                  <span class="badge badge--available">Available Now</span>
+                </div>
+                <p class="availability-card__desc">Purpose-built SIL home in a quiet residential street with excellent public transport access. Room available for a participant with psychosocial disability requiring high-level daily support and overnight staffing.</p>
+              </div>
+              <div class="availability-card__footer">
+                <div style="display:flex; flex-direction:column; gap:0.25rem;">
+                  <span style="font-size:0.75rem; font-weight:700; color:var(--color-text-muted);">ROOM TYPE</span>
+                  <span style="font-size:0.875rem; font-weight:700;">Single Room</span>
+                </div>
+                <a href="contact.html" class="btn btn--primary btn--sm">Enquire Now</a>
+              </div>
+            </article>
+
+            <!-- Card 3: SIL Newcastle Medium Available Now -->
+            <article class="availability-card fade-in-up delay-2"
+              data-service="sil"
+              data-region="newcastle"
+              data-support="medium"
+              data-room="single">
+              <div class="availability-card__header">
+                <span class="availability-card__ref">GLCG-SIL-003</span>
+                <span class="badge badge--sil">SIL</span>
+              </div>
+              <div class="availability-card__body">
+                <h3 class="availability-card__name">Hamilton North Shared Home</h3>
+                <div class="availability-card__region">
+                  <span>📍</span> Newcastle — Hamilton North
+                </div>
+                <div class="availability-card__badges">
+                  <span class="badge badge--medium">Medium Support</span>
+                  <span class="badge badge--available">Available Now</span>
+                </div>
+                <p class="availability-card__desc">Welcoming shared home in Hamilton North, close to shops, cafes and public transport. A single room is available for a participant with medium support needs who enjoys a relaxed, sociable living environment.</p>
+              </div>
+              <div class="availability-card__footer">
+                <div style="display:flex; flex-direction:column; gap:0.25rem;">
+                  <span style="font-size:0.75rem; font-weight:700; color:var(--color-text-muted);">ROOM TYPE</span>
+                  <span style="font-size:0.875rem; font-weight:700;">Single Room</span>
+                </div>
+                <a href="contact.html" class="btn btn--primary btn--sm">Enquire Now</a>
+              </div>
+            </article>
+
+            <!-- Card 4: SIL Lake Macquarie Medium Available Now -->
+            <article class="availability-card fade-in-up delay-3"
+              data-service="sil"
+              data-region="lake macquarie"
+              data-support="medium"
+              data-room="single">
+              <div class="availability-card__header">
+                <span class="availability-card__ref">GLCG-SIL-004</span>
+                <span class="badge badge--sil">SIL</span>
+              </div>
+              <div class="availability-card__body">
+                <h3 class="availability-card__name">Charlestown Shared Home</h3>
+                <div class="availability-card__region">
+                  <span>📍</span> Lake Macquarie — Charlestown
+                </div>
+                <div class="availability-card__badges">
+                  <span class="badge badge--medium">Medium Support</span>
+                  <span class="badge badge--available">Available Now</span>
+                </div>
+                <p class="availability-card__desc">Comfortable SIL home in Charlestown with two existing residents. Single room available for a participant seeking a friendly, supportive house with medium daily support, near the Charlestown Square shopping centre.</p>
+              </div>
+              <div class="availability-card__footer">
+                <div style="display:flex; flex-direction:column; gap:0.25rem;">
+                  <span style="font-size:0.75rem; font-weight:700; color:var(--color-text-muted);">ROOM TYPE</span>
+                  <span style="font-size:0.875rem; font-weight:700;">Single Room</span>
+                </div>
+                <a href="contact.html" class="btn btn--primary btn--sm">Enquire Now</a>
+              </div>
+            </article>
+
+            <!-- Card 5: SIL Maitland Low Coming Soon -->
+            <article class="availability-card fade-in-up delay-4"
+              data-service="sil"
+              data-region="maitland"
+              data-support="low"
+              data-room="single">
+              <div class="availability-card__header">
+                <span class="availability-card__ref">GLCG-SIL-005</span>
+                <span class="badge badge--sil">SIL</span>
+              </div>
+              <div class="availability-card__body">
+                <h3 class="availability-card__name">Rutherford New Build</h3>
+                <div class="availability-card__region">
+                  <span>📍</span> Maitland — Rutherford
+                </div>
+                <div class="availability-card__badges">
+                  <span class="badge badge--low">Low Support</span>
+                  <span class="badge badge--coming-soon">Coming Soon</span>
+                </div>
+                <p class="availability-card__desc">Brand new SIL property opening in Rutherford, Maitland. Single rooms available for participants with low support needs who are working towards increased independence. Expected to open late 2025 — register your interest now.</p>
+              </div>
+              <div class="availability-card__footer">
+                <div style="display:flex; flex-direction:column; gap:0.25rem;">
+                  <span style="font-size:0.75rem; font-weight:700; color:var(--color-text-muted);">ROOM TYPE</span>
+                  <span style="font-size:0.875rem; font-weight:700;">Single Room</span>
+                </div>
+                <a href="contact.html" class="btn btn--accent btn--sm">Register Interest</a>
+              </div>
+            </article>
+
+            <!-- Card 6: ILO Newcastle Medium Available Now -->
+            <article class="availability-card fade-in-up delay-5"
+              data-service="ilo"
+              data-region="newcastle"
+              data-support="medium"
+              data-room="single">
+              <div class="availability-card__header">
+                <span class="availability-card__ref">GLCG-ILO-001</span>
+                <span class="badge badge--ilo">ILO</span>
+              </div>
+              <div class="availability-card__body">
+                <h3 class="availability-card__name">Co-Residency — Islington</h3>
+                <div class="availability-card__region">
+                  <span>📍</span> Newcastle — Islington
+                </div>
+                <div class="availability-card__badges">
+                  <span class="badge badge--medium">Medium Support</span>
+                  <span class="badge badge--available">Available Now</span>
+                </div>
+                <p class="availability-card__desc">ILO co-residency arrangement in a fully furnished 3-bedroom home in Islington. A qualified support worker lives on-site and provides consistent, familiar support. Ideal for participants who value predictability and a long-term support relationship.</p>
+              </div>
+              <div class="availability-card__footer">
+                <div style="display:flex; flex-direction:column; gap:0.25rem;">
+                  <span style="font-size:0.75rem; font-weight:700; color:var(--color-text-muted);">ROOM TYPE</span>
+                  <span style="font-size:0.875rem; font-weight:700;">Single Room</span>
+                </div>
+                <a href="contact.html" class="btn btn--primary btn--sm">Enquire Now</a>
+              </div>
+            </article>
+
+            <!-- Card 7: ILO Lake Macquarie High Available Now -->
+            <article class="availability-card fade-in-up"
+              data-service="ilo"
+              data-region="lake macquarie"
+              data-support="high"
+              data-room="single">
+              <div class="availability-card__header">
+                <span class="availability-card__ref">GLCG-ILO-002</span>
+                <span class="badge badge--ilo">ILO</span>
+              </div>
+              <div class="availability-card__body">
+                <h3 class="availability-card__name">Host Arrangement — Warners Bay</h3>
+                <div class="availability-card__region">
+                  <span>📍</span> Lake Macquarie — Warners Bay
+                </div>
+                <div class="availability-card__badges">
+                  <span class="badge badge--high">High Support</span>
+                  <span class="badge badge--available">Available Now</span>
+                </div>
+                <p class="availability-card__desc">Exceptional host family in Warners Bay offering a warm, welcoming ILO arrangement for a participant with high support needs. The family has experience supporting people with psychosocial disability and is fully vetted and trained by our team.</p>
+              </div>
+              <div class="availability-card__footer">
+                <div style="display:flex; flex-direction:column; gap:0.25rem;">
+                  <span style="font-size:0.75rem; font-weight:700; color:var(--color-text-muted);">ROOM TYPE</span>
+                  <span style="font-size:0.875rem; font-weight:700;">Single Room</span>
+                </div>
+                <a href="contact.html" class="btn btn--primary btn--sm">Enquire Now</a>
+              </div>
+            </article>
+
+            <!-- Card 8: ILO Newcastle Low Enquire -->
+            <article class="availability-card fade-in-up delay-1"
+              data-service="ilo"
+              data-region="newcastle"
+              data-support="low"
+              data-room="single">
+              <div class="availability-card__header">
+                <span class="availability-card__ref">GLCG-ILO-003</span>
+                <span class="badge badge--ilo">ILO</span>
+              </div>
+              <div class="availability-card__body">
+                <h3 class="availability-card__name">Supported Housemate — Adamstown</h3>
+                <div class="availability-card__region">
+                  <span>📍</span> Newcastle — Adamstown
+                </div>
+                <div class="availability-card__badges">
+                  <span class="badge badge--low">Low Support</span>
+                  <span class="badge badge--enquire">Enquire</span>
+                </div>
+                <p class="availability-card__desc">ILO supported housemate arrangement being established in Adamstown, Newcastle. Seeking a participant with low support needs who would like to live with a peer housemate who provides informal support in exchange for a subsidised rent contribution.</p>
+              </div>
+              <div class="availability-card__footer">
+                <div style="display:flex; flex-direction:column; gap:0.25rem;">
+                  <span style="font-size:0.75rem; font-weight:700; color:var(--color-text-muted);">ROOM TYPE</span>
+                  <span style="font-size:0.875rem; font-weight:700;">Single Room</span>
+                </div>
+                <a href="contact.html" class="btn btn--outline btn--sm">Enquire</a>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- No Results Message -->
+          <div class="no-results" id="no-results">
+            <p style="font-size:3rem; margin-bottom:1rem;">🔍</p>
+            <h3 style="margin-bottom:0.75rem;">No vacancies match your filters</h3>
+            <p>Try adjusting your filters or contact us directly — we may have upcoming vacancies that aren't listed yet.</p>
+            <a href="contact.html" class="btn btn--primary" style="margin-top:1rem;">Contact Our Team</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOT FINDING WHAT YOU NEED -->
+  <section class="section" aria-label="Contact prompt">
+    <div class="container">
+      <div class="availability-banner fade-in-up text-center">
+        <span class="script-label">Not Found What You're Looking For?</span>
+        <h3>We May Have More Options Coming Soon</h3>
+        <p>Our vacancy list is updated regularly. If you don't see something that fits right now, get in touch — we may have upcoming opportunities that aren't listed yet, or we can explore tailored ILO options that meet your specific needs.</p>
+        <div class="btn-group" style="justify-content:center; margin-top:1rem;">
+          <a href="contact.html" class="btn btn--primary btn--lg">Talk to Our Team</a>
+          <a href="services/ilo.html" class="btn btn--outline btn--lg">Explore ILO Options</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🌟</div>
+            <div class="nav-logo-text"><strong>Guiding Light</strong><span>Care Group</span></div>
+          </a>
+          <p class="footer-tagline">Your Light Towards Independence. Supporting people with psychosocial disability across Newcastle, Lake Macquarie and Maitland.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="LinkedIn">Li</a>
+          </div>
+          <div class="footer-ndis-badge">✅ Registered NDIS Provider</div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services/sil.html">Supported Independent Living</a></li>
+            <li><a href="services/ilo.html">Individualised Living Options</a></li>
+            <li><a href="services/community-access.html">Community Access</a></li>
+            <li><a href="services/psychosocial-recovery.html">Psychosocial Recovery Coaching</a></li>
+            <li><a href="services/support-coordination.html">Support Coordination</a></li>
+            <li><a href="services/therapeutic-supports.html">Therapeutic Supports</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="ndis-funding.html">NDIS Funding Guide</a></li>
+            <li><a href="availability.html">SIL &amp; ILO Vacancies</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:0424096827">0424 096 827</a></div>
+          <div class="footer-contact-item"><span class="icon">✉️</span><a href="mailto:hello@guidinglightcare.com.au">hello@guidinglightcare.com.au</a></div>
+          <div class="footer-contact-item"><span class="icon">📍</span><span>Newcastle, Lake Macquarie &amp; Maitland, NSW</span></div>
+          <div class="footer-contact-item"><span class="icon">🕐</span><span>Mon–Fri 8:30am–5:00pm<br />On-call support 24/7</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Guiding Light Care Group. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
