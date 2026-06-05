@@ -1735,8 +1735,17 @@ p:last-child { margin-bottom: 0; }
   font-size: var(--font-size-sm);
   color: var(--text-light);
   line-height: var(--line-height-base);
-  margin: 0;
+  margin: 0 0 var(--space-3);
 }
+
+.team-card__email {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--green);
+  text-decoration: none;
+  word-break: break-all;
+}
+.team-card__email:hover { text-decoration: underline; }
 
 /* ============================================================
    Steps / Process
